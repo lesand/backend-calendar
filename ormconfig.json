@@ -1,0 +1,25 @@
+{
+    "name": "default",
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3305,
+    "username": "calendar_user",      
+    "password": "calendar_pw",
+    "database": "calendar_db",
+    "synchronize": true,
+    "logging": false,
+    "entities": [
+      "src/entity/*.js"
+    ],
+    "subscribers": [
+      "src/subscriber/*.js"
+    ],
+    "migrations": [
+      "src/migration/*.js"
+    ],
+    "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+    }
+  }
